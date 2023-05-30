@@ -27,8 +27,8 @@ stages:
     - task: ArchiveFiles@2
       displayName: 'Archive build artifacts'
       inputs:
-        rootFolderOrFile: 'target'
-        includeRootFolder: true
+        rootFolderOrFile: './target'
+        includeRootFolder: false
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
         replaceExistingArchive: true
