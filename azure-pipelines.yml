@@ -21,7 +21,6 @@ stages:
     steps:
     - checkout: self
     - script: |
-        cd spring-boot-react-example
         mvn clean package
         displayName: 'Build Maven project'
     
