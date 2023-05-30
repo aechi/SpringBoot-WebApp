@@ -27,7 +27,7 @@ stages:
     - task: ArchiveFiles@2
       displayName: 'Archive build artifacts'
       inputs:
-        rootFolderOrFile: 'spring-boot-react-example/target'
+        rootFolderOrFile: 'target'
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
