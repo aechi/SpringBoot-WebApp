@@ -63,9 +63,3 @@ stages:
                 {
                   "JAVA_OPTS": "-Dserver.port=80"
                 }
-          - task: AzureAppServiceManage@0
-            displayName: 'Restart Azure Web App'
-            inputs:
-              azureSubscription: $(azureServiceConnectionId)
-              appName: $(web_app_name)
-              action: 'RestartAzureWebApp'
